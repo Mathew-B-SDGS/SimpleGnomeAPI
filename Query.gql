@@ -1,0 +1,12 @@
+query findLOF {
+  gene(gene_symbol: "FHOD3", reference_genome: GRCh38) {
+    chrom
+    name
+    gnomad_constraint {
+      lof_z, oe_lof
+    }
+    exac_constraint {
+      pli
+    }
+  }
+}
