@@ -28,12 +28,6 @@ print(" status code: ", prompt.status_code)
 if prompt.status_code == 200:
   list=json.loads(prompt.text) 
   print(json.dumps(list, indent=4))
- # print("content : ", prompt.content)
-  #  print("text : ", prompt.text)   
-   # print("headers : ", prompt.headers['content-type'])
-    #print("json : ", prompt.gnomad_contraint)
-
-#print(list["data"]["gene"]["gnomad_constraint"]["syn_z"])
 syn_z=(list["data"]["gene"]["gnomad_constraint"]["syn_z"])
 mis_z=(list["data"]["gene"]["gnomad_constraint"]["mis_z"])
 pLI=(list["data"]["gene"]["gnomad_constraint"]["pLI"])
